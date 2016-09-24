@@ -1,0 +1,307 @@
+#content{
+	position:relative;
+	clear:left;    
+	margin:0 auto;       /*水平居中*/
+	width:990px;
+}
+.abcshop{
+	height:560px;
+	padding:10px 0;
+	overflow:hidden;
+}
+/*商品分类*/
+#jnCatalog{
+	position:relative;
+	float:left;
+	height:560px;
+	width: 187px;
+	margin:0 11px 0 0;
+	overflow:hidden;
+}
+#jnCatalog h2{
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	font-size: 12px;
+	text-indent:13px;
+	background-color:#6e6e6e;
+}
+.jnCatainfo{
+	position:relative;
+	border:solid 1px #6e6e6e;
+	border-style: none solid solid;
+	border-width: 0 1px 1px 1px;
+	height: 524px;
+	width:165px;
+	padding:5px 10px 0 10px;
+	overflow:hidden;
+	clear:left;
+}
+.jnCatainfo h3 {
+	position:relative;
+    border-bottom: 1px solid #EEEEEE;
+    height: 24px;
+	line-height:24px;
+    width: 164px;
+    overflow:hidden;     /*BFC*/
+}
+.jnCatainfo ul {
+    float: left;
+    padding: 0 2px 8px;
+}
+.jnCatainfo ul:after{
+	content:"";
+	display:block;
+	clear:left;
+	visibility:hidden;
+}
+.jnCatainfo li {
+	position:relative;
+    color: #AEADAE;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    width: 79px;
+    overflow: hidden;
+}
+.jnCatainfo li a{
+    color: #444444;
+}
+.jnCatainfo li a:hover{
+    color: #008CD7;
+    text-decoration: none;
+}
+.jnCatainfo li a.promoted{
+	color:#F9044E;
+}
+.jnCatainfo li .hot {
+	position: absolute;
+    background: url("../images/hot.gif") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    top: 0;
+    width: 21px;
+}
+
+#jnImageroll{
+	position:relative;
+	float:left;
+	height: 320px;
+	width: 550px;
+	overflow:hidden;
+	margin:0 11px 0 0;
+}
+#jnImageroll img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#jnImageroll div {
+	position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    float: left;
+}
+#jnImageroll div a {
+    background-color: #444444;
+    color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    height: 32px;
+    margin-right: 1px;
+    overflow: hidden;
+    padding: 5px 15px;
+    text-align: center;
+    width: 79px;
+}
+#jnImageroll div a:hover {
+    text-decoration: none;
+}
+#jnImageroll div a em {
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    width: 79px;
+}
+#jnImageroll .last {
+    margin: 0;
+    width: 80px;
+}
+#jnImageroll a.chos {
+    background: url("../images/adindex.gif") no-repeat center 39px #37A7D7;
+    color: #FFFFFF;
+}
+/*最新动态*/
+#jnNotice{
+	float:left;
+	position:relative;
+	height: 321px;
+	width: 230px;
+	overflow:hidden;
+}
+#jnMiaosha{
+	float:left;
+	height:164px;
+	margin-bottom: 5px;
+	overflow:hidden;
+	width:230px;
+}
+.JS_css3 img {
+	-webkit-transition:1s all;
+	-moz-transition:1s all;
+	-o-transition:1s all;
+	transition:1s all;
+}
+.JS_css3:hover img {                       /*旋转720*/
+	-webkit-transform:rotate(720deg);      
+	-moz-transform:rotate(720deg);
+	-o-transform:rotate(720deg);
+	transform:rotate(720deg);
+}
+#jnNoticeInfo{
+	float:left;
+	border:solid 1px #dfdfdf;
+	height:133px;
+	width:228px;
+	overflow:hidden;
+}
+#jnNoticeInfo h2{
+	height:23px;
+	line-height: 23px;
+	border-bottom: 1px solid #dfdfdf;
+	text-indent: 12px;
+}
+#jnNoticeInfo ul {
+    float: left;
+    padding: 6px 2px 0 12px;
+}
+#jnNoticeInfo ul:after{
+	content:"";
+	display:block;
+	clear:left;
+	visibility:hidden;
+}
+#jnNoticeInfo li {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+#jnNoticeInfo li a{
+	color:#666666;
+}
+#jnNoticeInfo li a:hover{
+    color: #008CD7;
+    text-decoration: none;
+}
+#tooltip{
+	position:absolute;
+	border:1px solid #333;
+	background-color:#f7fdd1;
+	padding:1px;
+	color:#333;
+	display:none;
+}
+/*品牌活动*/
+#jnBrand{
+	float:left;
+	height: 230px;
+	width: 790px;
+	margin:10px 0 0 0;
+	overflow:left;
+}
+#jnBrandTab{
+	position:relative;
+	border-bottom: 1px solid #e4e4e4;
+	height: 29px;
+	width: 790px;
+	float:left;
+}
+#jnBrandTab h2{
+	position:absolute;
+	height: 29px;
+	line-height: 29px;
+	left:0;
+	width:100px;
+}
+#jnBrandTab ul{
+	position:absolute;
+	right:0;
+	top:10px;
+}
+#jnBrandTab ul li{
+	float:left;
+	margin:0 10px 0 0;
+}
+#jnBrandTab ul li a{
+    background-color: #E4E4E4;
+    color: #000000;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+}
+#jnBrandTab .chos{
+	background: url("../images/chos.gif") no-repeat scroll 50% bottom transparent;
+	padding-bottom: 3px;
+}
+#jnBrandTab .chos a{
+	background-color:#fa5889;
+	color:#fff;
+	outline:0 none; 
+}
+#jnBrandContent{
+	position:relative;
+	float:left;
+	height:188px;
+	overflow: hidden;
+	margin:8px 5px;
+	width:790px;
+}
+#jnBrandList{
+	position:absolute;
+	left:0;
+	top:0;
+	width:3200px;
+}
+#jnBrandContent li{
+    position:relative;
+	float:left;
+	height:188px;
+	overflow:hidden;
+	padding:0 5px;
+	width: 185px;
+}
+#jnBrandContent li img {
+	position: absolute;
+    left: 5px;
+    top: 0;
+}
+#jnBrandContent li span {
+	position: absolute;
+    background-color: #EFEFEF;
+    bottom: 0;
+    color: #666666;
+    display: inline-block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    text-align: center;
+    width: 183px;
+}
+#jnBrandContent li a {
+	color:#666666;
+}
+#jnBrandContent li a:hover{
+    color: #008CD7;
+    text-decoration: none;
+}
+
+/* footer */
+#footer {
+    margin: 0 auto;
+    width: 990px;
+    color: #666666;
+    padding: 18px 0;
+    text-align: center;
+}
